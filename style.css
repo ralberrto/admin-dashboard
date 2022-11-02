@@ -1,3 +1,4 @@
 body {
-    background-color: peachpuff;
+    display: grid;
+    grid-template-columns: 2fr 7fr;
 }
