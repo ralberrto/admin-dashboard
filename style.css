@@ -17,7 +17,7 @@ body {
     padding: 1em 0.5em;
 }
 
-#sidebar > div > a{
+#sidebar > div > a {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
@@ -34,7 +34,6 @@ body {
 }
 
 #sidebar p {
-    font-weight: bold;
     font-size: 1.2em;
     margin: 0;
 }
@@ -53,13 +52,13 @@ body {
 
 #main-cont {
     display: grid;
-    grid-template-rows: 2fr 3fr 22fr;
+    grid-template-rows: 2fr 3fr 18fr;
 }
 
 nav {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 20px 40px;
+    padding: 15px 30px;
     background-color: #ffffff;
 }
 
@@ -69,6 +68,11 @@ nav ul {
     grid-auto-flow: column;
     list-style: none;
     margin: 0;
+}
+
+nav ul img {
+    height: 40px;
+    border-radius: 50%;
 }
 
 nav ul li {
