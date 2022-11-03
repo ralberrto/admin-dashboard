@@ -241,20 +241,22 @@ article #projects .entry-footer {
     margin-right: 5%;
 }
 
-article #announcements .section-body {
+article #announcements .section-body,
+article #trending .section-body {
     background-color: #ffffff;
     flex: 1;
     border-radius: 10px;
 }
 
-article #announcements .grid-container {
+article .grid-container {
     display: grid;
     align-items: start;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fit, minmax(140px, 1fr));
 }
 
-article #announcements .entry {
+article #announcements .entry,
+article #trending .entry {
     border-radius: 0;
     background-color: transparent;
 }
@@ -263,6 +265,32 @@ article #announcements .entry-body:last-child {
     margin-bottom: 0;
     padding-bottom: 1em;
     border-bottom: 1px solid #d9d9d9;
+}
+
+article #trending .grid-container {
+    grid-template-rows: none;
+    padding: 1em;
+}
+
+article #trending .entry {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    padding: 0 0 1em 0;
+}
+
+article #trending .entry p {
+    margin: 0;
+}
+
+article #trending img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+#trending .account-info > p:last-child {
+    color: #353535;
+    font-size: 0.8em;
 }
  /*
 
