@@ -10,14 +10,14 @@ body {
     margin: 0;
 }
 
-#sideboard {
+#sidebar {
     display: flex;
     flex-direction: column;
-    background-color: #0c7f0c;
+    background-color: #3c6e71;
     padding: 1em 0.5em;
 }
 
-#sideboard > div > a{
+#sidebar > div > a{
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
@@ -25,21 +25,21 @@ body {
     text-decoration: none;
 }
 
-#sideboard > div svg {
+#sidebar > div svg {
     justify-self: center;
 }
 
-#sideboard h1,p {
+#sidebar h1,p {
     color: white;
 }
 
-#sideboard p {
+#sidebar p {
     font-weight: bold;
     font-size: 1.2em;
     margin: 0;
 }
 
-#sideboard > #sb-title {
+#sidebar > #sb-title {
     margin-bottom: 3em;
 }
 
@@ -47,6 +47,6 @@ body {
     font-size: 1.8em;
 }
 
-#sideboard .flex-gap {
+#sidebar .flex-gap {
     flex: 1;
 }
