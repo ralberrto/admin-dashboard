@@ -68,9 +68,9 @@ nav {
 }
 
 nav ul {
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-auto-flow: column;
+    justify-content: flex-end;
     list-style: none;
     margin: 0;
 }
@@ -81,6 +81,7 @@ nav ul img {
 }
 
 nav ul li {
+    margin-right: 1em;
     color: black;
 }
 
@@ -114,7 +115,7 @@ nav form > svg {
 header {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    box-shadow: 0 4px 5px -5px #000000;
+    box-shadow: 0 4px 5px -5px #ffffff;
 }
 
 header > div:first-child {
@@ -182,31 +183,33 @@ article {
     grid-template: 1fr 1fr / 7fr 3fr;
     grid-gap: 20px;
     background-color: #284b63;
+    padding: 20px;
 }
 
 article > div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 20px;
 }
 
  article #projects {
     grid-row: 1 / -1;
 }
 
-article .section-body {
+article #projects .section-body {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: minmax(160px, 240px);
 }
 
+
 article .section-title {
     align-self: start;
     grid-column: 1 / -1;
     font-size: 1.5em;
     font-weight: bold;
+    color: #ffffff;
     margin-top: 0;
 }
 
@@ -227,11 +230,49 @@ article .entry-title {
 
 article .entry-body {
     overflow: scroll;
+    font-size: 0.8em;
+    color: #353535;
 }
 
-article .entry-footer {
+article #projects .entry-footer {
     display: flex;
     justify-self: end;
     justify-content: end;
     margin-right: 5%;
 }
+
+article #announcements .section-body {
+    background-color: #ffffff;
+    flex: 1;
+    border-radius: 10px;
+}
+
+article #announcements .grid-container {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+article #announcements .entry {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+article #announcements .entry-body:last-child {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #d9d9d9;
+}
+ /*
+
+article #announcements .entry {
+
+}
+
+article #announcements .entry-title {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+*/
