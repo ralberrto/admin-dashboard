@@ -5,7 +5,7 @@ body {
 
 #main-grid {
     display: grid;
-    grid-template-columns: 2fr 7fr;
+    grid-template-columns: 1fr 4fr;
     min-height: 100vh;
     margin: 0;
 }
@@ -13,7 +13,7 @@ body {
 #sidebar {
     display: flex;
     flex-direction: column;
-    background-color: #3c6e71;
+    background-color: #353535;
     padding: 1em 0.5em;
 }
 
@@ -49,4 +49,55 @@ body {
 
 #sidebar .flex-gap {
     flex: 1;
+}
+
+#main-cont {
+    display: grid;
+    grid-template-rows: 2fr 3fr 22fr;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+nav ul {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    color: black;
+}
+
+nav input {
+    appearance: none;
+    width: max(80%, 120px)
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+}
+
+nav form > input[type="search"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #d9d9d9;
+}
+
+nav form > input[type="search"]:focus {
+    outline-style: solid;
+    outline-color: #3c6e71;
+    outline-width: 2px;
+}
+
+nav form > svg {
+    margin-right: 20px;
 }
